@@ -28,11 +28,11 @@ public class Server {
         for(int i =0;i<familynames.length;i++)
             familylist.add(new Family(String.valueOf(i),familynames[i]));
         /*初始化花种*/
-        typelist.add(new Type("0001","蓝蔷薇","1"));
-        typelist.add(new Type("0002","月季","1"));
-        typelist.add(new Type("0003","水仙","2"));
-        typelist.add(new Type("0004","康乃馨","3"));
-        typelist.add(new Type("0005","兰花","4"));
+        typelist.add(new Type("0001","蓝蔷薇","0"));
+        typelist.add(new Type("0002","月季","0"));
+        typelist.add(new Type("0003","水仙","1"));
+        typelist.add(new Type("0004","康乃馨","2"));
+        typelist.add(new Type("0005","兰花","3"));
 
         /*初始化花盆*/
         for(int i = 0;i<16;i++)
@@ -47,6 +47,14 @@ public class Server {
         return familylist;
     }
 
+    public static Type getTyprlidy(String familyid){
+        for(Type type:typelist){
+            if(type.getFamilyid().equals(familyid))
+                return type;
+        }
+        return null;
+    }
+
     public static void setFamilylist(ArrayList<Family> familylist) {
         Server.familylist = familylist;
     }
@@ -56,6 +64,13 @@ public class Server {
         return typelist;
     }
 
+    public static ArrayList<Type> getTypelist(String familyid) {
+        ArrayList<Type> list = new ArrayList<>();
+        for(Type type:typelist)
+            if(type.getFamilyid().equals(familyid))
+                list.add(type);
+        return list;
+    }
     public static void setTypelist(ArrayList<Type> typelist) {
         Server.typelist = typelist;
     }

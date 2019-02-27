@@ -56,36 +56,4 @@ public class SelectActivity extends AppCompatActivity {
         family = b_family[0].getText().toString();
         //AddFlowerType();
     }
-
-    /*
-    public void AddFlowerType()
-    {
-        ArrayList<Type> flowerTypes = FlowerTypeController.getFlowerTypes();
-        /*添加花的图层响应函数
-        View.OnClickListener listener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                PercentFrameLayout children = (PercentFrameLayout)view;
-                TextView textView = (TextView)((PercentFrameLayout)(children.getChildAt(1))).getChildAt(0);
-                String name = textView.getText().toString();//得到花名
-                new Flower(FlowerTypeController.FindbyName(name),pot);
-                Toast.makeText(getApplicationContext(),"添加成功！",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(),HomeActivity.class));
-                overridePendingTransition(0, 0);
-            }
-        };
-        int i = 0;
-        for(Type flowerType : flowerTypes)
-        {
-            if(flowerType.getFamily().equals(family))
-            {
-                LinearLayout root = (LinearLayout)getLayoutInflater().inflate(R.layout.item_flower,layout_context,true);
-                PercentFrameLayout children = (PercentFrameLayout)root.getChildAt(i++);
-                children.setOnClickListener(listener);
-                TextView textView = (TextView)((PercentFrameLayout)(children.getChildAt(1))).getChildAt(0);
-                textView.setText(flowerType.getName());
-            }
-        }
-    }
-    */
 }

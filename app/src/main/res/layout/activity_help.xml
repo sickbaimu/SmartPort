@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/L1"
+        app:layout_constraintVertical_weight="9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/L2"
+        android:background="@color/green"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="使用小助手"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:padding="16dp"
+        android:id="@+id/L2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/L1"
+        app:layout_constraintBottom_toTopOf="@+id/L3"
+        app:layout_constraintVertical_weight="72"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="@string/text_help"
+        />
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/L3"
+        app:layout_constraintTop_toBottomOf="@+id/L2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_gravity="start"
+            android:background="@color/green"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/b_lib"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="花架"
+            android:textSize="18sp"
+            android:id="@+id/b_pot" />
+        <Button
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@+id/b_pot"
+            app:layout_constraintRight_toLeftOf="@+id/b_set"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/b_lib"
+            android:layout_gravity="center"
+            android:background="@color/green"
+            android:text="花库"
+            android:textSize="18sp" />
+        <Button
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/b_lib"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/b_set"
+            android:layout_gravity="end"
+            android:background="@color/green"
+            app:layout_widthPercent="33.3%"
+            app:layout_heightPercent="100%"
+            android:text="设置"
+            android:textSize="18sp" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

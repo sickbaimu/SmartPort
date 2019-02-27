@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SmartPlant</string>
+    <string name="password">密码</string>
+    <string name="password_confirm">确认密码</string>
+    <string name="username">用户名</string>
+    <string name="_null">null</string>
+    <string name="text_help">1.APP花架界面与实物花架的花盆摆放一一对应，请正确种植所配置的植物; \n\n2.花盆详情界面中具有可调节的阈值参数，请根据您具体的地理环境，在建议范围内适当调节; \n\n3.本花架具备自动调节功能，当您配置完花盆的植物后，可以让花架独立运行，可通过APP任意查看监测数据。\n\n</string>
+</resources>

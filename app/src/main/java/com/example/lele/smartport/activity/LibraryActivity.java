@@ -145,7 +145,7 @@ public class LibraryActivity extends AppCompatActivity {
             }
         }
 
-        public TypeAdapter(List<Type> typelist)
+        TypeAdapter(List<Type> typelist)
         {
             this.typelist = typelist;
         }

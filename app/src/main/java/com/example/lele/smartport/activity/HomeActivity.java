@@ -1,13 +1,17 @@
 package com.example.lele.smartport.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.example.lele.smartport.R;
 import com.example.lele.smartport.faker.Server;
 
@@ -98,8 +102,12 @@ public class HomeActivity extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.empty);
                 layout[i].setOnClickListener(gone_listener);
             }else {
+
                 TextView textView = (TextView)layout[i].getChildAt(1);
-                textView.setText(Server.TypeIDtoName(Server.getPort(i).getTypeID()));
+                Log.d("CCCCC","5555"+textView.getText().toString());
+                String name = Server.TypeIDtoName(Server.getPort(i).getTypeID());
+                textView.setText(name);
+                textView.setTextColor(Color.BLACK);
                 layout[i].setOnClickListener(exist_listener);
             }
         }

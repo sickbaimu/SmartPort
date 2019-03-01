@@ -20,10 +20,10 @@ public class RegisterActivity extends AppCompatActivity {
     }
     public void init_self_button()
     {
-        final EditText edit_user = (EditText)findViewById(R.id.edit_user);
-        final EditText edit_pwd = (EditText)findViewById(R.id.edit_pwd);
-        final EditText edit_pwd_confirm = (EditText)findViewById(R.id.edit_pwd_confirm);
-        Button b_register = (Button)findViewById(R.id.b_register);
+        final EditText edit_user = findViewById(R.id.edit_user);
+        final EditText edit_pwd = findViewById(R.id.edit_pwd);
+        final EditText edit_pwd_confirm = findViewById(R.id.edit_pwd_confirm);
+        Button b_register = findViewById(R.id.b_register);
         b_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

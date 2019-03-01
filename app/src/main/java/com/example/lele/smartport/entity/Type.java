@@ -38,9 +38,5 @@ public class Type implements Serializable {
     public String getFamilyid() {
         return familyid;
     }
-
-    public void setFamilyid(String familyid) {
-        this.familyid = familyid;
-    }
 }
 

@@ -10,13 +10,22 @@ public class Server {
     static private ArrayList<Port> portlist;
     static private ArrayList<Type> typelist;
     static private ArrayList<Family> familylist;
-    String familynames[] = {"蔷薇科","石蒜科","石竹科","兰科"};
+    int version = 1;
+    private String familynames[] = {"蔷薇科","石蒜科","石竹科","兰科"};
     public Server()
     {
         init_list();
         init_data();
     }
 
+    public static int getnum(){
+        int cnt = 0;
+        for(Port port:portlist){
+            if(!port.getTypeID().equals("NULL"))
+                cnt++;
+        }
+        return cnt;
+    }
     private void init_list(){
         portlist = new ArrayList<>();
         typelist = new ArrayList<>();
@@ -47,18 +56,13 @@ public class Server {
         return familylist;
     }
 
-    public static Type getTyprlidy(String familyid){
+    public static Type getType(String familyid){
         for(Type type:typelist){
             if(type.getFamilyid().equals(familyid))
                 return type;
         }
         return null;
     }
-
-    public static void setFamilylist(ArrayList<Family> familylist) {
-        Server.familylist = familylist;
-    }
-
 
     public static ArrayList<Type> getTypelist() {
         return typelist;
@@ -71,16 +75,9 @@ public class Server {
                 list.add(type);
         return list;
     }
-    public static void setTypelist(ArrayList<Type> typelist) {
-        Server.typelist = typelist;
-    }
 
     public static ArrayList<Port> getPortlist() {
         return portlist;
-    }
-
-    public static void setPortlist(ArrayList<Port> portlist) {
-        Server.portlist = portlist;
     }
 
     public static void FillPort(int address,String typeID)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -48,7 +48,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@id/layout_1_2"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -59,7 +59,6 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
@@ -75,7 +74,7 @@
                 app:layout_constraintLeft_toRightOf="@id/layout_1_1"
                 app:layout_constraintRight_toLeftOf="@id/layout_1_3"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -86,7 +85,6 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
@@ -102,7 +100,7 @@
                 app:layout_constraintLeft_toRightOf="@id/layout_1_2"
                 app:layout_constraintRight_toLeftOf="@id/layout_1_4"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -113,7 +111,6 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
@@ -129,7 +126,7 @@
                 app:layout_constraintLeft_toRightOf="@id/layout_1_3"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -140,7 +137,6 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
@@ -163,7 +159,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@id/layout_2_2"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -174,14 +170,13 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:text="0"/>
+                    android:text="4"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/layout_2_2"
@@ -190,7 +185,7 @@
                 app:layout_constraintLeft_toRightOf="@id/layout_2_1"
                 app:layout_constraintRight_toLeftOf="@id/layout_2_3"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -201,14 +196,13 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:text="1"/>
+                    android:text="5"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/layout_2_3"
@@ -217,7 +211,7 @@
                 app:layout_constraintLeft_toRightOf="@id/layout_2_2"
                 app:layout_constraintRight_toLeftOf="@id/layout_2_4"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -228,14 +222,13 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:text="2"/>
+                    android:text="6"/>
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -244,7 +237,7 @@
                 app:layout_constraintLeft_toRightOf="@id/layout_2_3"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -255,14 +248,13 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:text="3"/>
+                    android:text="7"/>
             </LinearLayout>
         </android.support.constraint.ConstraintLayout>
         <android.support.constraint.ConstraintLayout
@@ -278,7 +270,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@id/layout_3_2"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -289,14 +281,13 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:text="0"/>
+                    android:text="8"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/layout_3_2"
@@ -305,7 +296,7 @@
                 app:layout_constraintLeft_toRightOf="@id/layout_3_1"
                 app:layout_constraintRight_toLeftOf="@id/layout_3_3"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -316,14 +307,13 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:text="1"/>
+                    android:text="9"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/layout_3_3"
@@ -332,7 +322,7 @@
                 app:layout_constraintLeft_toRightOf="@id/layout_3_2"
                 app:layout_constraintRight_toLeftOf="@id/layout_3_4"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -343,14 +333,13 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:text="2"/>
+                    android:text="10"/>
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -359,7 +348,7 @@
                 app:layout_constraintLeft_toRightOf="@id/layout_3_3"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -370,14 +359,13 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:text="3"/>
+                    android:text="11"/>
             </LinearLayout>
         </android.support.constraint.ConstraintLayout>
         <android.support.constraint.ConstraintLayout
@@ -393,7 +381,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@id/layout_4_2"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -404,14 +392,13 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:text="0"/>
+                    android:text="12"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/layout_4_2"
@@ -420,7 +407,7 @@
                 app:layout_constraintLeft_toRightOf="@id/layout_4_1"
                 app:layout_constraintRight_toLeftOf="@id/layout_4_3"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -431,14 +418,13 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:text="1"/>
+                    android:text="13"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/layout_4_3"
@@ -447,7 +433,7 @@
                 app:layout_constraintLeft_toRightOf="@id/layout_4_2"
                 app:layout_constraintRight_toLeftOf="@id/layout_4_4"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -458,14 +444,13 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:text="2"/>
+                    android:text="14"/>
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
@@ -474,7 +459,7 @@
                 app:layout_constraintLeft_toRightOf="@id/layout_4_3"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_width="0dp"
-                android:layout_height="150dp">
+                android:layout_height="match_parent">
                 <ImageView
                     android:contentDescription="@string/_null"
                     android:layout_weight="3"
@@ -485,14 +470,13 @@
                     android:layout_weight="5"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:textColor="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text=""/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:text="3"/>
+                    android:text="15"/>
             </LinearLayout>
         </android.support.constraint.ConstraintLayout>
     </android.support.constraint.ConstraintLayout>

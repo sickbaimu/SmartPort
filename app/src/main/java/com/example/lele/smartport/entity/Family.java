@@ -3,8 +3,8 @@ package com.example.lele.smartport.entity;
 import java.io.Serializable;
 
 public class Family implements Serializable {
-    String id;
-    String name;
+    private String id;
+    private String name;
 
     public String getId() {
         return id;

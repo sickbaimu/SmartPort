@@ -81,7 +81,6 @@ public class LibraryActivity extends AppCompatActivity {
 
     class FamilyAdapter extends RecyclerView.Adapter<FamilyAdapter.ViewHolder>{
         private List<Family> familylist;
-
         class ViewHolder extends RecyclerView.ViewHolder{
             View view;//整个控件组
             TextView textView;//显示文字信息
@@ -100,16 +99,22 @@ public class LibraryActivity extends AppCompatActivity {
         }
 
         @Override
-        public FamilyAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
+        public ViewHolder onCreateViewHolder(final ViewGroup parent, int viewType){
             final View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_family,parent,false);
-            FamilyAdapter.ViewHolder holder = new FamilyAdapter.ViewHolder(view);
+            ViewHolder holder = new FamilyAdapter.ViewHolder(view);
             holder.view.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
-                    LinearLayout linearLayout =(LinearLayout)view;
-                    TextView textView = linearLayout.findViewById(R.id.id);
-                    TextView textView1 = linearLayout.findViewById(R.id.text);
-                    textView1.setTextColor(Color.RED);
+                    for(int i=0;i<parent.getChildCount();i++)
+                    {
+                        LinearLayout linearLayout = (LinearLayout)parent.getChildAt(i);
+                        TextView textView = linearLayout.findViewById(R.id.text);
+                        if(linearLayout.equals(view))
+                            textView.setTextColor(Color.RED);
+                        else
+                            textView.setTextColor(Color.BLACK);
+                    }
+                    TextView textView = view.findViewById(R.id.id);
                     String id = textView.getText().toString();
                     AddType(id);
                 }
